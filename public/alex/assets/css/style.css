@@ -1,0 +1,16 @@
+/* ==========================================================================
+    Stylesheet
+   ========================================================================== */
+
+/* Base Tailwind Layer fallbacks for custom elements */
+@layer base {
+  html {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    scroll-behavior: smooth;
+  }
+}
+
+/* Custom CSS Extensions (Add any non-utility custom code here) */
+.custom-gradient-overlay {
+    background: linear-gradient(135deg, rgba(99, 102, 241, 0.05) 0%, rgba(168, 85, 247, 0.05) 100%);
+}

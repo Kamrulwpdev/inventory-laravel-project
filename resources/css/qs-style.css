@@ -1,0 +1,14 @@
+body {
+    font-family: "Poppins", Arial, Helvetica, sans-serif !important;
+}
+
+/* Ensure bold headings use Poppins weights correctly */
+h1, h2, h3, h4, h5, h6, .fw-bold {
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    font-weight: 600; /* Standard "trendy" semi-bold weight */
+}
+
+/* Specific fix for your product cards and category names */
+.category-name, .product-card-hover h5 {
+    font-family: "Poppins", sans-serif;
+}

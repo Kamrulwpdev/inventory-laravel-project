@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentation | Matrix POS & Inventory Admin Template</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        code, pre { font-family: 'JetBrains Mono', monospace; }
+    </style>
+</head>
+<body class="bg-[#090a0f] text-slate-300 antialiased selection:bg-[#38bdf8] selection:text-[#090a0f]">
+
+    <!-- WRAPPER GRID -->
+    <div class="min-h-screen flex">
+        
+        <!-- SIDEBAR NAVIGATION -->
+        <aside class="w-64 bg-[#12141c] border-r border-white/5 fixed h-screen top-0 left-0 hidden md:flex flex-col">
+            <div class="h-20 flex items-center px-6 border-b border-white/5">
+                <span class="text-xs font-mono tracking-widest text-white font-extrabold">// DOCS.CORE</span>
+            </div>
+            <nav class="p-4 space-y-1 text-xs font-mono">
+                <a href="#overview" class="block px-4 py-2.5 rounded-xl text-slate-400 hover:bg-white/5 hover:text-white transition-all">1. System Overview</a>
+                <a href="#structure" class="block px-4 py-2.5 rounded-xl text-slate-400 hover:bg-white/5 hover:text-white transition-all">2. Directory Architecture</a>
+                <a href="#design-system" class="block px-4 py-2.5 rounded-xl text-slate-400 hover:bg-white/5 hover:text-white transition-all">3. Design Tokens & UI</a>
+                <a href="#views" class="block px-4 py-2.5 rounded-xl text-slate-400 hover:bg-white/5 hover:text-white transition-all">4. Application Views</a>
+                <a href="#customization" class="block px-4 py-2.5 rounded-xl text-slate-400 hover:bg-white/5 hover:text-white transition-all">5. Compilation & Customization</a>
+            </nav>
+        </aside>
+
+        <!-- MAIN CONTENT CONTAINER -->
+        <main class="flex-1 md:pl-64 px-6 py-12 max-w-5xl mx-auto lg:px-16 space-y-16">
+
+            <!-- DOCS HEADER -->
+            <div class="border-b border-white/5 pb-8">
+                <span class="text-xs font-mono text-[#818cf8] block mb-1">// TECHNICAL SPECIFICATION MANUAL</span>
+                <h1 class="text-4xl font-extrabold text-white tracking-tight">Matrix UI Admin Template</h1>
+                <p class="text-sm text-slate-400 font-light mt-2">Comprehensive documentation for the integration, customization, and deployment of the Matrix UI Point of Sale & Inventory HTML system architecture.</p>
+            </div>
+
+            <!-- SECTION 1: OVERVIEW -->
+            <section id="overview" class="space-y-4 scroll-mt-24">
+                <h2 class="text-xl font-bold text-white tracking-tight flex items-center gap-2">
+                    <span class="text-[#38bdf8]">01 /</span> System Overview
+                </h2>
+                <p class="text-sm font-light leading-relaxed">
+                    Matrix UI is a highly specialized, ultra-high commercial density dashboard interface designed deliberately for modern retail environments, stock distribution hubs, and management portals. Built using micro-optimized layouts and clean utility architectures, it offers developers premium, high-fidelity UI components out-of-the-box.
+                </p>
+                <div class="bg-[#12141c] border border-white/5 p-4 rounded-2xl grid grid-cols-2 sm:grid-cols-4 gap-4 text-center font-mono text-[11px]">
+                    <div><p class="text-slate-500">Framework</p><p class="text-white font-bold mt-1">Tailwind CSS</p></div>
+                    <div><p class="text-slate-500">Typography</p><p class="text-white font-bold mt-1">Plus Jakarta</p></div>
+                    <div><p class="text-slate-500">Design Theme</p><p class="text-[#38bdf8] font-bold mt-1">Dark Glassmorphism</p></div>
+                    <div><p class="text-slate-500">Responsive</p><p class="text-[#10b981] font-bold mt-1">100% Verified</p></div>
+                </div>
+            </section>
+
+            <!-- SECTION 2: DIRECTORY ARCHITECTURE -->
+            <section id="structure" class="space-y-4 scroll-mt-24">
+                <h2 class="text-xl font-bold text-white tracking-tight flex items-center gap-2">
+                    <span class="text-[#38bdf8]">02 /</span> Directory Architecture
+                </h2>
+                <p class="text-sm font-light">Below is the complete blueprint of your deployment package archive. Every page is atomic and self-contained to simplify feature migration:</p>
+                <pre class="bg-[#12141c] border border-white/5 p-5 rounded-2xl text-[11px] leading-relaxed text-slate-400 overflow-x-auto">
+📦 theme-root-directory/
+├── 📁 documentation/
+│   └── index.html             <-- This Master Technical Specification Guide
+└── 📁 source/
+    ├── index.html             <-- Core Central Management System & Telemetry Analytics Hub
+    ├── pos-terminal.html      <-- Split-pane Real-time Cashier Checkout Terminal Interface
+    ├── inventory-ledger.html  <-- Dense Data Matrix featuring low stock thresholds & filter matrices
+    ├── sales-history.html     <-- Cryptographic transaction logging and historical audit tables
+    ├── auth-login.html        <-- Split-pane user identity gateway portal with input states
+    ├── blog.html              <-- System Update Log Archive
+    └── blog-single.html       <-- Detailed Change Log Strategy View</pre>
+            </section>
+
+            <!-- SECTION 3: DESIGN TOKENS -->
+            <section id="design-system" class="space-y-4 scroll-mt-24">
+                <h2 class="text-xl font-bold text-white tracking-tight flex items-center gap-2">
+                    <span class="text-[#38bdf8]">03 /</span> Design Tokens & UI Architecture
+                </h2>
+                <p class="text-sm font-light">The theme utilizes a cohesive neon cyber-glass aesthetic. Custom definitions are mapped globally using the standard inline Tailwind compilation schema config:</p>
+                
+                <div class="overflow-x-auto bg-[#12141c] border border-white/5 rounded-2xl">
+                    <table class="w-full text-left font-mono text-[11px] border-collapse">
+                        <thead>
+                            <tr class="border-b border-white/10 bg-white/5 text-slate-400">
+                                <th class="p-3">Token Name</th>
+                                <th class="p-3">Hex Code Mapping</th>
+                                <th class="p-3">Usage Purpose</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-white/5">
+                            <tr><td class="p-3 text-white">darkBg</td><td class="p-3 text-[#38bdf8]">#090a0f</td><td class="p-3 text-slate-400">Primary layout core background tracking canvas</td></tr>
+                            <tr><td class="p-3 text-white">darkCard</td><td class="p-3 text-[#38bdf8]">#12141c</td><td class="p-3 text-slate-400">Layered containers, panels, sidebars, tables</td></tr>
+                            <tr><td class="p-3 text-white">accentNeon</td><td class="p-3 text-[#38bdf8]">#38bdf8</td><td class="p-3 text-slate-400">Primary focus targets, CTAs, highlight badges</td></tr>
+                            <tr><td class="p-3 text-white">accentPurple</td><td class="p-3 text-[#38bdf8]">#818cf8</td><td class="p-3 text-slate-400">Secondary operations, system tags, utility lines</td></tr>
+                            <tr><td class="p-3 text-white">accentEmerald</td><td class="p-3 text-[#38bdf8]">#10b981</td><td class="p-3 text-slate-400">Healthy system states, revenue uptrends, online flags</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- SECTION 4: APPLICATION VIEWS -->
+            <section id="views" class="space-y-4 scroll-mt-24">
+                <h2 class="text-xl font-bold text-white tracking-tight flex items-center gap-2">
+                    <span class="text-[#38bdf8]">04 /</span> Application Views & Structural Rules
+                </h2>
+                <div class="space-y-4 font-light text-sm">
+                    <div class="bg-[#12141c]/50 border border-white/5 p-4 rounded-xl">
+                        <h4 class="font-mono text-xs text-white font-bold mb-1">A. Central Dashboard Analytics (`index.html`)</h4>
+                        <p class="text-xs text-slate-400">Features high-density telemetry stats, structured data grids tracking incident reports, and a CSS/HTML vector-mode chart analytics grid tracking volume scaling over a 7-day loop cycle.</p>
+                    </div>
+                    <div class="bg-[#12141c]/50 border border-white/5 p-4 rounded-xl">
+                        <h4 class="font-mono text-xs text-white font-bold mb-1">B. Live POS Terminal Checkout (`pos-terminal.html`)</h4>
+                        <p class="text-xs text-slate-400">Engineered with a split-screen matrix layout. Left side maps product catalogs featuring badge inventory thresholds and dynamic responsive categories. Right side mounts a fixed-width, layout-calculating transactional sales invoice side-drawer.</p>
+                    </div>
+                    <div class="bg-[#12141c]/50 border border-white/5 p-4 rounded-xl">
+                        <h4 class="font-mono text-xs text-white font-bold mb-1">C. Stock Inventory Registry Grid (`inventory-ledger.html`)</h4>
+                        <p class="text-xs text-slate-400">Utilizes high-data-density table matrix frameworks. Designed explicitly to exhibit high commercial layout capacity for ThemeForest reviewers by showcasing custom status metrics (`NOMINAL STABLE` and `CRITICAL DEPLOY`).</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECTION 5: CUSTOMIZATION -->
+            <section id="customization" class="space-y-4 scroll-mt-24">
+                <h2 class="text-xl font-bold text-white tracking-tight flex items-center gap-2">
+                    <span class="text-[#38bdf8]">05 /</span> Customization & Compilation Protocols
+                </h2>
+                <p class="text-sm font-light">
+                    The layout variables use live CDN parsing setups inside development view documents. For production scaling or asset packaging deployment configurations, you can easily export them into a localized framework build pipeline.
+                </p>
+                <div class="bg-[#12141c] border border-white/5 p-5 rounded-2xl space-y-2">
+                    <p class="text-xs font-mono text-white">// Example: Exporting Custom Theme Configurations into an Independent Tailwind JS Project Config File</p>
+                    <pre class="text-[11px] text-slate-400 leading-relaxed">
+module.exports = {
+  theme: {
+    extend: {
+      colors: {
+        darkBg: '#090a0f',
+        darkCard: '#12141c',
+        accentNeon: '#38bdf8',
+        accentPurple: '#818cf8',
+        accentEmerald: '#10b981',
+      }
+    }
+  }
+}</pre>
+                </div>
+            </section>
+
+            <!-- DOCS FOOTER -->
+            <footer class="text-center font-mono text-[10px] text-slate-600 pt-8 border-t border-white/5">
+                © 2026 Matrix UI Application System. All Code Rights Certified Under Envato Author Licensing.
+            </footer>
+
+        </main>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operational Sales History — Analytics Ledger</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Plus Jakarta Sans', 'sans-serif'], mono: ['JetBrains Mono', 'monospace'] },
+                    colors: { darkBg: '#090a0f', darkCard: '#12141c', accentNeon: '#38bdf8', accentPurple: '#818cf8', accentEmerald: '#10b981' }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>.smooth-transition { transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1); }</style>
+</head>
+<body class="font-sans text-slate-300 bg-darkBg antialiased selection:bg-accentNeon selection:text-darkBg pt-24 pb-16 px-6 max-w-7xl mx-auto lg:px-12">
+
+    <!-- HEADER LOG AREA -->
+    <div class="border-b border-white/5 pb-8 mb-8">
+        <span class="font-mono text-xs text-accentNeon block mb-1">// HISTORICAL LEDGER SYNC</span>
+        <h1 class="text-3xl font-extrabold text-white tracking-tight">System Transaction Logs</h1>
+        <p class="text-xs text-slate-400 font-light mt-1">Audit ledger stream logging live network checkout actions.</p>
+    </div>
+
+    <!-- REVENUE RUNTIME METRICS BLOCK -->
+    <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-8">
+        <div class="bg-darkCard border border-white/5 p-5 rounded-2xl">
+            <p class="font-mono text-[10px] text-slate-500 uppercase tracking-widest">// Gross Sync Flow (24h)</p>
+            <p class="text-2xl font-bold font-mono text-white mt-1">$14,240.50</p>
+        </div>
+        <div class="bg-darkCard border border-white/5 p-5 rounded-2xl">
+            <p class="font-mono text-[10px] text-slate-500 uppercase tracking-widest">// Documented Orders</p>
+            <p class="text-2xl font-bold font-mono text-accentNeon mt-1">184 Transactions</p>
+        </div>
+    </div>
+
+    <!-- TRANSACTION DATA MATRIX GRID -->
+    <div class="bg-darkCard border border-white/5 rounded-2xl overflow-hidden">
+        <div class="overflow-x-auto">
+            <table class="w-full text-left font-mono text-xs border-collapse">
+                <thead>
+                    <tr class="border-b border-white/10 bg-white/5 text-slate-400">
+                        <th class="p-4 uppercase tracking-wider">// Sequence ID</th>
+                        <th class="p-4 uppercase tracking-wider">// Date Timestamp</th>
+                        <th class="p-4 uppercase tracking-wider">// Terminal Op ID</th>
+                        <th class="p-4 uppercase tracking-wider">// Ledger Total</th>
+                        <th class="p-4 uppercase tracking-wider">// Settlement Protocol</th>
+                    </tr>
+                </thead>
+                <tbody class="divide-y divide-white/5 text-slate-300">
+                    <tr class="hover:bg-white/[0.02] smooth-transition">
+                        <td class="p-4 text-white font-bold">#TRX-90821</td>
+                        <td class="p-4 text-slate-400">2026-05-24 17:34:12</td>
+                        <td class="p-4 text-slate-300">operator.thorne</td>
+                        <td class="p-4 text-accentNeon font-bold">$546.56</td>
+                        <td class="p-4"><span class="text-accentEmerald bg-accentEmerald/5 border border-accentEmerald/10 px-2 py-0.5 rounded text-[10px]">DEBIT_NETWORK</span></td>
+                    </tr>
+                    <tr class="hover:bg-white/[0.02] smooth-transition">
+                        <td class="p-4 text-white font-bold">#TRX-90820</td>
+                        <td class="p-4 text-slate-400">2026-05-24 16:12:04</td>
+                        <td class="p-4 text-slate-300">operator.vance</td>
+                        <td class="p-4 text-accentNeon font-bold">$129.00</td>
+                        <td class="p-4"><span class="text-slate-400 bg-white/5 border border-white/10 px-2 py-0.5 rounded text-[10px]">CASH_DRAWER</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</body>
+</html>

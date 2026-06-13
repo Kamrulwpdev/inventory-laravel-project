@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Master Engineering Manual — Alex Thorne Premium Portfolio Engine</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        code, pre { font-family: 'JetBrains Mono', monospace; }
+        .glass-panel { background: rgba(18, 20, 28, 0.7); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.05); }
+        .nav-link:hover { color: #38bdf8; padding-left: 6px; }
+        .smooth-transition { transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1); }
+    </style>
+</head>
+<body class="bg-[#090a0f] text-slate-300 antialiased selection:bg-[#38bdf8] selection:text-[#090a0f]">
+
+    <div class="min-h-screen flex flex-col lg:flex-row">
+        
+        <aside class="w-full lg:w-72 bg-[#12141c] border-b lg:border-b-0 lg:border-r border-white/5 flex flex-col fixed h-auto lg:h-screen top-0 left-0 z-30">
+            <div class="h-20 flex items-center px-6 border-b border-white/5 justify-between bg-black/10">
+                <span class="text-xs font-mono tracking-widest text-white font-extrabold flex items-center gap-2">
+                    <span class="w-2 h-2 rounded-full bg-[#38bdf8] animate-pulse"></span>
+                    // SYSTEM.DOCS_v1.0.4
+                </span>
+                <span class="text-[9px] font-mono bg-white/5 border border-white/10 px-2 py-0.5 rounded text-slate-400 font-bold">MAY 2026</span>
+            </div>
+            
+            <nav class="p-4 space-y-1 text-[11px] font-mono overflow-y-auto flex-1 custom-scrollbar">
+                <div class="text-[10px] text-slate-500 font-bold tracking-wider uppercase px-3 pt-2 pb-1">// CORE PROTOCOLS</div>
+                <a href="#introduction" class="block px-3 py-2 rounded-xl text-slate-400 hover:bg-white/5 nav-link smooth-transition">01 / Introduction Matrix</a>
+                <a href="#structure" class="block px-3 py-2 rounded-xl text-slate-400 hover:bg-white/5 nav-link smooth-transition">02 / Asset Manifest Tree</a>
+                <a href="#design-tokens" class="block px-3 py-2 rounded-xl text-slate-400 hover:bg-white/5 nav-link smooth-transition">03 / Color & Type System</a>
+                
+                <div class="text-[10px] text-slate-500 font-bold tracking-wider uppercase px-3 pt-4 pb-1">// INTERFACE LOGIC</div>
+                <a href="#bento-grid" class="block px-3 py-2 rounded-xl text-slate-400 hover:bg-white/5 nav-link smooth-transition">04 / Bento Matrix Control</a>
+                <a href="#components" class="block px-3 py-2 rounded-xl text-slate-400 hover:bg-white/5 nav-link smooth-transition">05 / Code Building Blocks</a>
+                <a href="#form-handling" class="block px-3 py-2 rounded-xl text-slate-400 hover:bg-white/5 nav-link smooth-transition">06 / Form & Gateway Input</a>
+                
+                <div class="text-[10px] text-slate-500 font-bold tracking-wider uppercase px-3 pt-4 pb-1">// PRODUCTION LOGICS</div>
+                <a href="#optimization" class="block px-3 py-2 rounded-xl text-slate-400 hover:bg-white/5 nav-link smooth-transition">07 / Compiling Engine</a>
+                <a href="#credits" class="block px-3 py-2 rounded-xl text-slate-400 hover:bg-white/5 nav-link smooth-transition">08 / Dependencies & Tags</a>
+            </nav>
+        </aside>
+
+        <main class="flex-1 lg:pl-72 px-6 sm:px-12 py-12 max-w-5xl mx-auto space-y-24 w-full overflow-x-hidden">
+
+            <section id="introduction" class="border-b border-white/5 pb-12 pt-20 lg:pt-6 scroll-mt-24">
+                <span class="text-xs font-mono text-[#818cf8] block mb-2 tracking-widest uppercase font-bold">// OFFICIAL PRODUCTION SPECIFICATION SHEET</span>
+                <h1 class="text-4xl sm:text-5xl font-black text-white tracking-tight leading-none mb-4">
+                    Alex Thorne Portfolio Layout Engine
+                </h1>
+                <p class="text-sm text-slate-400 font-light max-w-2xl leading-relaxed">
+                    Welcome to the master architectural manual for the premium, high-converting glassmorphic portfolio system. This document outlines structural layout patterns, responsive CSS color configurations, and optimization processes required to maintain the template to Envato Elite quality standards.
+                </p>
+                <div class="mt-6 flex flex-wrap gap-2.5">
+                    <span class="px-3 py-1 bg-white/5 border border-white/10 rounded-full font-mono text-[10px] text-white">Framework Layer: Tailwind CSS Playground</span>
+                    <span class="px-3 py-1 bg-white/5 border border-white/10 rounded-full font-mono text-[10px] text-[#38bdf8]">Design Paradigm: Asymmetric Bento Glassmorphism</span>
+                    <span class="px-3 py-1 bg-white/5 border border-white/10 rounded-full font-mono text-[10px] text-[#10b981]">SEO Audit Status: Passed Clean</span>
+                </div>
+            </section>
+
+            <section id="structure" class="space-y-4 scroll-mt-24">
+                <div class="flex items-center space-x-3">
+                    <span class="font-mono text-xs text-[#38bdf8] bg-[#38bdf8]/10 px-2 py-0.5 rounded font-bold">02</span>
+                    <h2 class="text-xl font-bold text-white tracking-tight">The Manifest Directory Tree</h2>
+                </div>
+                <p class="text-sm font-light text-slate-400 leading-relaxed">
+                    The source files are structured cleanly without unnecessary files or bloated subdirectories. This simple architecture makes it easy to quickly migrate code snippets or launch your template:
+                </p>
+                
+                <pre>
+├── root-directory/
+│   ├── documentation/
+│   │   └── index.html             <-- This Guide
+│   ├── assets/
+│   │   ├── css/                   <-- Target Tailwind Stylesheets
+│   │   ├── js/                    <-- Application Control Logic
+│   │   └── img/                   <-- Static UI Graphics
+│   ├── index.html                 <-- Analytics Hub Dashboard
+│   ├── pos-terminal.html          <-- Live Point-of-Sale Checkout
+│   ├── inventory-ledger.html      <-- Stock Registry System Grid
+│   ├── sales-history.html         <-- Transaction Accounting Audit
+│   ├── auth-login.html            <-- Security Access Portal
+│   ├── blog.html                  <-- Platform Updates Loop Archive
+│   └── blog-single.html           <-- System Update Article View</pre>
+            </section>
+
+            <section id="design-tokens" class="space-y-6 scroll-mt-24">
+                <div class="flex items-center space-x-3">
+                    <span class="font-mono text-xs text-[#38bdf8] bg-[#38bdf8]/10 px-2 py-0.5 rounded font-bold">03</span>
+                    <h2 class="text-xl font-bold text-white tracking-tight">Color Tokens & Web Typography</h2>
+                </div>
+                <p class="text-sm font-light text-slate-400">
+                    The layout parameters utilize a cohesive neon-cyber palette. These variables are handled directly inside the custom config object found in your file header, making it simple to tweak the design system globally:
+                </p>
+                
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 pt-2">
+                    <div class="glass-panel p-5 rounded-2xl border border-white/5">
+                        <div class="w-full h-14 rounded-xl bg-[#090a0f] border border-white/10 mb-4 flex items-center justify-center font-mono text-[10px] text-slate-400">#090a0f</div>
+                        <h4 class="text-xs font-mono font-bold text-white">darkBg (Canvas Canvas)</h4>
+                        <p class="text-[11px] text-slate-500 mt-1 font-light leading-normal">Deep foundation landscape backdrop preventing visual fatigue across long user sessions.</p>
+                    </div>
+                    <div class="glass-panel p-5 rounded-2xl border border-white/5">
+                        <div class="w-full h-14 rounded-xl bg-[#12141c] border border-white/10 mb-4 flex items-center justify-center font-mono text-[10px] text-slate-400">#12141c</div>
+                        <h4 class="text-xs font-mono font-bold text-white">darkCard (Bento Cards)</h4>
+                        <p class="text-[11px] text-slate-500 mt-1 font-light leading-normal">Elevates bento boxes, testimonials, input drawers, and portfolio cards cleanly.</p>
+                    </div>
+                    <div class="glass-panel p-5 rounded-2xl border border-white/5">
+                        <div class="w-full h-14 rounded-xl bg-[#38bdf8] border border-white/10 mb-4 flex items-center justify-center font-mono text-[10px] text-[#090a0f] font-bold">#38bdf8</div>
+                        <h4 class="text-xs font-mono font-bold text-white">accentNeon (Sky Fuel)</h4>
+                        <p class="text-[11px] text-slate-500 mt-1 font-light leading-normal">Powers user click targets, conversion badges, primary data points, and buttons.</p>
+                    </div>
+                </div>
+
+                <div class="bg-[#12141c] border border-white/5 rounded-2xl p-6 space-y-3">
+                    <h4 class="font-mono text-xs text-white font-bold uppercase tracking-wider">// Font Family Hierarchies</h4>
+                    <p class="text-xs font-light text-slate-400 leading-relaxed">
+                        To add new headings or technical data rows, combine these two complementary typography layouts:
+                    </p>
+                    <ul class="space-y-2 text-xs font-mono text-slate-300 pl-4 list-disc">
+                        <li><span class="text-[#38bdf8]">Primary Display Headings:</span> <code class="bg-white/5 px-1 py-0.5 rounded text-white">font-sans</code> (Plus Jakarta Sans — weights 300 to 800)</li>
+                        <li><span class="text-[#818cf8]">Data Matrix Metadata:</span> <code class="bg-white/5 px-1 py-0.5 rounded text-white">font-mono</code> (JetBrains Mono — weights 400 and 500)</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="bento-grid" class="space-y-4 scroll-mt-24">
+                <div class="flex items-center space-x-3">
+                    <span class="font-mono text-xs text-[#38bdf8] bg-[#38bdf8]/10 px-2 py-0.5 rounded font-bold">04</span>
+                    <h2 class="text-xl font-bold text-white tracking-tight">Bento Layout Architecture Grid Rules</h2>
+                </div>
+                <p class="text-sm font-light text-slate-400 leading-relaxed">
+                    The hero area utilizes an asymmetric grid configuration based on a standard Tailwind <code class="text-white bg-white/5 px-1.5 py-0.5 rounded text-xs">grid-cols-1 lg:grid-cols-12</code> row schema. This layout ensures elements scale fluidly across viewports while retaining a beautiful design rhythm.
+                </p>
+
+                <div class="overflow-x-auto bg-[#12141c] border border-white/5 rounded-2xl shadow-xl mt-4">
+                    <table class="w-full text-left font-mono text-xs border-collapse">
+                        <thead>
+                            <tr class="border-b border-white/10 bg-white/5 text-slate-400">
+                                <th class="p-4">Visual Component ID</th>
+                                <th class="p-4">Mobile Utility</th>
+                                <th class="p-4">Desktop Span Mapping</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-white/5 text-slate-300">
+                            <tr class="hover:bg-white/[0.01]">
+                                <td class="p-4 text-white font-bold">Hero Statement Text Box</td>
+                                <td class="p-4 text-amber-500">w-full (Block View)</td>
+                                <td class="p-4 text-[#38bdf8] font-bold">lg:col-span-8</td>
+                            </tr>
+                            <tr class="hover:bg-white/[0.01]">
+                                <td class="p-4 text-white font-bold">Profile Headshot Asset Panel</td>
+                                <td class="p-4 text-amber-500">w-full (Min h-320px)</td>
+                                <td class="p-4 text-[#38bdf8] font-bold">lg:col-span-4</td>
+                            </tr>
+                            <tr class="hover:bg-white/[0.01]">
+                                <td class="p-4 text-white font-bold">Capabilities Introduction Column</td>
+                                <td class="p-4 text-amber-500">w-full (Block View)</td>
+                                <td class="p-4 text-[#818cf8] font-bold">lg:col-span-4</td>
+                            </tr>
+                            <tr class="hover:bg-white/[0.01]">
+                                <td class="p-4 text-white font-bold">Capabilities Features Matrix</td>
+                                <td class="p-4 text-amber-500">w-full (Two-Column Grid)</td>
+                                <td class="p-4 text-[#818cf8] font-bold">lg:col-span-8</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <section id="components" class="space-y-4 scroll-mt-24">
+                <div class="flex items-center space-x-3">
+                    <span class="font-mono text-xs text-[#38bdf8] bg-[#38bdf8]/10 px-2 py-0.5 rounded font-bold">05</span>
+                    <h2 class="text-xl font-bold text-white tracking-tight">Component Building Blocks</h2>
+                </div>
+                <p class="text-sm font-light text-slate-400">
+                    Use these code snippets to quickly add new items to your project while maintaining a perfectly cohesive style across sections:
+                </p>
+
+                <div class="space-y-6 pt-2">
+                    <div class="space-y-2">
+                        <span class="text-xs font-mono text-slate-400 block">// A. The Standard Technology Item Card Layout</span>
+                        <div class="bg-[#12141c] p-5 rounded-2xl border border-white/5 font-mono text-[11px] text-slate-400 overflow-x-auto shadow-inner">
+&lt;div class="bg-darkCard/50 border border-white/5 rounded-2xl p-6 hover:border-white/10 transition-all duration-300"&gt;
+    &lt;div class="w-10 h-10 rounded-xl bg-accentNeon/5 flex items-center justify-center border border-accentNeon/20 mb-6 text-accentNeon"&gt;
+        &lt;!-- Insert Vector SVG Graphic Path Here --&gt;
+    &lt;/div&gt;
+    &lt;h3 class="text-lg font-semibold text-white mb-2"&gt;Component Title Heading&lt;/h3&gt;
+    &lt;p class="text-sm text-slate-400 font-light leading-relaxed"&gt;Description properties narrative content goes here.&lt;/p&gt;
+&lt;/div&gt;</div>
+                    </div>
+
+                    <div class="space-y-2">
+                        <span class="text-xs font-mono text-slate-400 block">// B. Interactive Call-To-Action Link Anchor Element</span>
+                        <div class="bg-[#12141c] p-5 rounded-2xl border border-white/5 font-mono text-[11px] text-slate-400 overflow-x-auto shadow-inner">
+&lt;a href="#target" class="inline-flex items-center justify-center px-5 py-2.5 text-xs font-mono tracking-wider uppercase text-accentNeon border border-accentNeon/30 rounded-lg hover:bg-accentNeon/10 transition-all duration-300"&gt;
+    Interact With System
+&lt;/a&gt;</div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="form-handling" class="space-y-4 scroll-mt-24">
+                <div class="flex items-center space-x-3">
+                    <span class="font-mono text-xs text-[#38bdf8] bg-[#38bdf8]/10 px-2 py-0.5 rounded font-bold">06</span>
+                    <h2 class="text-xl font-bold text-white tracking-tight">Form Configuration & Lead Generation</h2>
+                </div>
+                <p class="text-sm font-light text-slate-400 leading-relaxed">
+                    The contact section includes a complete, high-intent input setup ready to capture incoming leads. To link the frontend form inputs to a server or third-party email provider, update the <code class="text-white bg-white/5 px-1 py-0.5 rounded text-xs">action</code> and <code class="text-white bg-white/5 px-1 py-0.5 rounded text-xs">method</code> attributes as shown below:
+                </p>
+
+                <div class="bg-[#12141c] border border-white/5 p-5 rounded-2xl font-mono text-xs text-slate-400 space-y-2 overflow-x-auto">
+                    <p class="text-white">// Example Connection: Connecting the Form to a Live Formspree Endpoint</p>
+                    <p class="text-emerald-500">&lt;form action="https://formspree.io/f/your_unique_endpoint_id" method="POST" class="lg:col-span-7 space-y-4 z-10 w-full"&gt;</p>
+                    <p class="text-slate-600">    &lt;!-- Ensure input elements possess valid name markers for proper routing: --&gt;</p>
+                    <p>&lt;input type="text" name="client-name" placeholder="John Doe" class="..."&gt;</p>
+                    <p>&lt;input type="email" name="client-email" placeholder="john@domain.com" class="..."&gt;</p>
+                    <p class="text-emerald-500">&lt;/form&gt;</p>
+                </div>
+            </section>
+
+            <section id="optimization" class="space-y-4 scroll-mt-24">
+                <div class="flex items-center space-x-3">
+                    <span class="font-mono text-xs text-[#38bdf8] bg-[#38bdf8]/10 px-2 py-0.5 rounded font-bold">07</span>
+                    <h2 class="text-xl font-bold text-white tracking-tight">Production Compilation Workflow</h2>
+                </div>
+                <p class="text-sm font-light text-slate-400 leading-relaxed">
+                    This landing page uses an online parsing system for immediate customization. For production deployments, optimize your assets, minimize stylesheets, and run performance checks via a standardized terminal workflow:
+                </p>
+
+                <div class="bg-[#12141c] border border-white/5 p-5 rounded-2xl space-y-4">
+                    <div>
+                        <span class="block text-xs font-mono text-white mb-2">Step 1: Install Local Package Optimizers</span>
+                        <pre class="text-[11px] bg-black/40 p-3 rounded-xl text-[#38bdf8] font-mono">npm install -D tailwindcss postcss autoprefixer</pre>
+                    </div>
+                    <div>
+                        <span class="block text-xs font-mono text-white mb-2">Step 2: Generate Minified Output Engine (Saves to Distribution Folder)</span>
+                        <pre class="text-[11px] bg-black/40 p-3 rounded-xl text-[#38bdf8] font-mono">npx tailwindcss -i ./src/input.css -o ./dist/output.css --minify</pre>
+                    </div>
+                </div>
+            </section>
+
+            <section id="credits" class="space-y-4 scroll-mt-24">
+                <div class="flex items-center space-x-3">
+                    <span class="font-mono text-xs text-[#38bdf8] bg-[#38bdf8]/10 px-2 py-0.5 rounded font-bold">08</span>
+                    <h2 class="text-xl font-bold text-white tracking-tight">Open Source Library Credits</h2>
+                </div>
+                <p class="text-sm font-light text-slate-400 leading-relaxed">
+                    All scripts, typography systems, and images used in this theme are open-source. They are pre-vetted and fully compliant with Envato's asset distribution requirements:
+                </p>
+                
+                <ul class="space-y-3 font-mono text-xs text-slate-400 pl-4 list-disc">
+                    <li><strong class="text-white">Design Foundations Framework:</strong> Tailwind CSS Engine Architecture — Distributed via Open Source MIT Licensing.</li>
+                    <li><strong class="text-white">Web Font Architecture:</strong> Plus Jakarta Sans & JetBrains Mono Fonts — Sourced safely via the Google Fonts Matrix.</li>
+                    <li><strong class="text-white">Mockup Graphic Material:</strong> High-density curated portfolio headshots — Sourced via Unsplash Creative Commons.</li>
+                </ul>
+            </section>
+
+            <footer class="text-center font-mono text-[10px] text-slate-600 pt-12 border-t border-white/5">
+                © 2026 Alex Thorne Design Ecosystem. All Code Rights Certified Under Envato Author Marketplace Guidelines.
+            </footer>
+
+        </main>
+    </div>
+
+</body>
+</html>

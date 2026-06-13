@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alex Thorne — Complete Conversion-Optimized Portfolio Architecture</title>
+    <!-- Tailwind CSS CDN Engine -->
+      
+    <script src="https://cdn.tailwindcss.com"></script>
+          <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                        mono: ['JetBrains Mono', 'monospace'],
+                    },
+                    colors: {
+                        darkBg: '#090a0f',
+                        darkCard: '#12141c',
+                        accentNeon: '#38bdf8', /* Electric Sky Blue */
+                        accentPurple: '#818cf8',
+                        accentEmerald: '#10b981'
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Premium Web Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style type="text/tailwindcss">
+        .smooth-transition {
+            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+    </style>
+</head>
+<body class="font-sans text-slate-300 bg-darkBg antialiased overflow-x-hidden selection:bg-accentNeon selection:text-darkBg">
+
+    <!-- 1. FIXED GLASSMORPHIC NAVIGATION -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-darkBg/70 backdrop-blur-xl border-b border-white/5 smooth-transition">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12 h-20 flex items-center justify-between">
+            <a href="#" class="font-mono text-sm tracking-widest text-white font-bold group">
+                THORNE<span class="text-accentNeon group-hover:animate-pulse">_</span>
+            </a>
+            
+            <nav class="hidden xl:flex items-center space-x-8 text-[11px] font-mono tracking-widest uppercase text-slate-400">
+                <a href="#about" class="hover:text-white smooth-transition">// 01. About</a>
+                <a href="#portfolio" class="hover:text-white smooth-transition">// 02. Portfolio</a>
+                <a href="#process" class="hover:text-white smooth-transition">// 03. Process</a>
+                <a href="#testimonials" class="hover:text-white smooth-transition">// 04. Reviews</a>
+                <a href="#pricing" class="hover:text-white smooth-transition">// 05. Pricing</a>
+                <a href="#faq" class="hover:text-white smooth-transition">// 06. FAQs</a>
+                <a href="#contact" class="hover:text-white smooth-transition">// 07. Connect</a>
+            </nav>
+
+            <div class="hidden md:block">
+                <a href="#contact" class="inline-flex items-center justify-center px-5 py-2.5 text-xs font-mono tracking-wider uppercase text-accentNeon border border-accentNeon/30 rounded-lg hover:bg-accentNeon/10 smooth-transition">
+                    Get in touch
+                </a>
+            </div>
+
+            <!-- Mobile Menu Toggle Button -->
+            <button class="xl:hidden p-2 text-white" aria-label="Toggle Menu Container">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8h16M4 16h16"></path></svg>
+            </button>
+        </div>
+    </header>
+
+    <main class="pt-20">
+        
+        <!-- 2. ASYMMETRIC BENTO HERO GRAPHIC SECTION -->
+        <section id="hero" class="py-12 lg:py-20 px-6 max-w-7xl mx-auto lg:px-12">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+                
+                <!-- Main Statement Bento Box -->
+                <div class="lg:col-span-8 bg-darkCard border border-white/5 rounded-3xl p-8 lg:p-12 flex flex-col justify-between relative overflow-hidden group">
+                    <div class="absolute -top-24 -right-24 w-96 h-96 bg-accentNeon/10 rounded-full blur-3xl group-hover:bg-accentNeon/15 smooth-transition"></div>
+                    <div>
+                        <span class="inline-flex items-center space-x-2 font-mono text-xs text-accentNeon bg-accentNeon/5 border border-accentNeon/10 px-3 py-1 rounded-full mb-8">
+                            <span class="w-2 h-2 rounded-full bg-accentNeon animate-ping"></span>
+                            <span>Available for Core Contracts</span>
+                        </span>
+                        <h1 class="text-4xl md:text-6xl font-bold tracking-tight text-white leading-[1.1] mb-6">
+                            Engineering complex interfaces through <span class="text-transparent bg-clip-text bg-gradient-to-r from-accentNeon to-accentPurple">uncompromising logic</span> & design.
+                        </h1>
+                    </div>
+                    <p class="text-base md:text-lg text-slate-400 max-w-xl font-light leading-relaxed mt-4">
+                        Hello, I'm Alex. I combine software development architecture with premium user experience principles to deploy fast, scalable web software.
+                    </p>
+                </div>
+
+                <!-- Profile Asset Bento Box -->
+                <div class="lg:col-span-4 bg-darkCard border border-white/5 rounded-3xl overflow-hidden min-h-[320px] relative group">
+                    <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=800&q=80" alt="Alex Thorne Creative Headshot" class="w-full h-full object-cover grayscale opacity-70 group-hover:scale-105 group-hover:grayscale-0 smooth-transition duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-darkBg via-transparent to-transparent"></div>
+                    <div class="absolute bottom-6 left-6 right-6">
+                        <p class="font-mono text-xs text-accentNeon">// CREATIVE TECHNOLOGIST</p>
+                        <h2 class="text-xl font-bold text-white mt-1">Based in Stockholm, SE</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. DETAILED EXPERIENCE / MATRIX CAPABILITIES -->
+        <section id="about" class="py-16 px-6 max-w-7xl mx-auto lg:px-12">
+            <hr class="border-white/5 mb-16">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                <div class="lg:col-span-4">
+                    <span class="font-mono text-xs text-accentNeon block mb-2">// 01. CAPABILITIES</span>
+                    <h2 class="text-3xl font-bold text-white tracking-tight">Core Expertise</h2>
+                    <p class="text-slate-400 font-light mt-4 leading-relaxed">
+                        Focused on building accessible, premium components and scalable web logic without bloating operational footprints.
+                    </p>
+                </div>
+                
+                <div class="lg:col-span-8 grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="bg-darkCard/50 border border-white/5 rounded-2xl p-6 hover:border-white/10 smooth-transition">
+                        <div class="w-10 h-10 rounded-xl bg-accentNeon/5 flex items-center justify-center border border-accentNeon/20 mb-6 text-accentNeon">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
+                        </div>
+                        <h3 class="text-lg font-semibold text-white mb-2">Frontend Systems Architecture</h3>
+                        <p class="text-sm text-slate-400 font-light leading-relaxed">Tailwind configurations, modular UI patterns, component lifecycles, and modern application viewports.</p>
+                    </div>
+
+                    <div class="bg-darkCard/50 border border-white/5 rounded-2xl p-6 hover:border-white/10 smooth-transition">
+                        <div class="w-10 h-10 rounded-xl bg-accentPurple/5 flex items-center justify-center border border-accentPurple/20 mb-6 text-accentPurple">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.58 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.58 4 8 4s8-1.79 8-4M4 7c0-2.21 3.58-4 8-4s8 1.79 8 4m0 5c0 2.21-3.58 4-8 4s-8-1.79-8-4"></path></svg>
+                        </div>
+                        <h3 class="text-lg font-semibold text-white mb-2">Data Processing & APIs</h3>
+                        <p class="text-sm text-slate-400 font-light leading-relaxed">Secure serialization layers, custom endpoint integrations, relational table formatting, and sub-10ms response loops.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. MATRIX TECH STACK BADGE WRAPPER -->
+        <section id="experience" class="py-12 bg-darkCard/30 border-y border-white/5 px-6 lg:px-12">
+            <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-center gap-4 lg:gap-6 text-xs font-mono text-slate-400">
+                <span class="text-white font-bold tracking-wider uppercase mr-2">// SYSTEM STACK MATRIX:</span>
+                <span class="bg-white/5 border border-white/10 px-4 py-2 rounded-xl text-slate-300">TypeScript</span>
+                <span class="bg-white/5 border border-white/10 px-4 py-2 rounded-xl text-slate-300">Tailwind CSS</span>
+                <span class="bg-white/5 border border-white/10 px-4 py-2 rounded-xl text-slate-300">React / NextJS</span>
+                <span class="bg-white/5 border border-white/10 px-4 py-2 rounded-xl text-slate-300">GraphQL APIs</span>
+                <span class="bg-white/5 border border-white/10 px-4 py-2 rounded-xl text-slate-300">PostgreSQL</span>
+            </div>
+        </section>
+
+        <!-- 5. NEW: INTERACTIVE ROI / CORE METRICS SHOWCASE -->
+        <section class="py-20 bg-darkCard/10 border-b border-white/5 px-6 lg:px-12">
+            <div class="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <div>
+                    <p class="text-4xl lg:text-5xl font-bold text-white tracking-tight font-mono mb-2">99.8%</p>
+                    <p class="font-mono text-[10px] text-slate-500 uppercase tracking-widest">// Average Lighthouse Speed</p>
+                </div>
+                <div>
+                    <p class="text-4xl lg:text-5xl font-bold text-accentNeon tracking-tight font-mono mb-2">14M+</p>
+                    <p class="font-mono text-[10px] text-slate-500 uppercase tracking-widest">// Production API Requests</p>
+                </div>
+                <div>
+                    <p class="text-4xl lg:text-5xl font-bold text-white tracking-tight font-mono mb-2">22%</p>
+                    <p class="font-mono text-[10px] text-slate-500 uppercase tracking-widest">// Client Conversion Surge</p>
+                </div>
+                <div>
+                    <p class="text-4xl lg:text-5xl font-bold text-accentPurple tracking-tight font-mono mb-2">35+</p>
+                    <p class="font-mono text-[10px] text-slate-500 uppercase tracking-widest">// Shipped Web Interfaces</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. ADVANCED PORTFOLIO SHOWCASE GRID -->
+        <section id="portfolio" class="py-24 px-6 max-w-7xl mx-auto lg:px-12">
+            <div class="mb-16 flex flex-col md:flex-row md:items-end justify-between gap-6">
+                <div>
+                    <span class="font-mono text-xs text-accentNeon block mb-2">// 02. PREVIOUS WORK SHOWCASE</span>
+                    <h2 class="text-3xl md:text-5xl font-bold text-white tracking-tight">Recent Deployments</h2>
+                </div>
+                <div class="flex flex-wrap gap-2 font-mono text-[11px] uppercase tracking-wider">
+                    <span class="px-4 py-1.5 rounded-full bg-white/10 text-white border border-white/10 cursor-default">All Projects</span>
+                    <span class="px-4 py-1.5 rounded-full bg-transparent text-slate-400 border border-white/5 cursor-default">Web Systems</span>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project Node 1 -->
+                <div class="group flex flex-col justify-between bg-darkCard/40 border border-white/5 rounded-3xl p-5 hover:border-white/10 hover:bg-darkCard/60 smooth-transition">
+                    <div>
+                        <div class="overflow-hidden rounded-2xl bg-darkCard aspect-[16/10] relative mb-6">
+                            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80" alt="Financial Analytics Metrics Engine Dashboard" class="w-full h-full object-cover opacity-50 mix-blend-luminosity group-hover:opacity-90 group-hover:scale-102 group-hover:mix-blend-normal smooth-transition duration-500">
+                            <div class="absolute bottom-4 left-4 flex gap-1.5">
+                                <span class="bg-darkBg/90 backdrop-blur-md font-mono text-[9px] px-2.5 py-1 rounded-md text-slate-300 border border-white/5">Next.js</span>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between mb-2">
+                            <span class="font-mono text-[10px] text-accentNeon tracking-widest uppercase">E-Commerce Layers</span>
+                            <span class="w-1.5 h-1.5 rounded-full bg-accentEmerald"></span>
+                        </div>
+                        <h3 class="text-xl font-bold text-white group-hover:text-accentNeon smooth-transition">Aperture Engine</h3>
+                        <p class="text-sm text-slate-400 font-light mt-3 leading-relaxed">A high-converting global dynamic storefront layer synchronized via webhook pipelines.</p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-white/5 flex items-center justify-between text-xs font-mono group-hover:text-white smooth-transition">
+                        <span class="text-slate-500">View Live Case Study</span>
+                        <svg class="w-4 h-4 transform group-hover:translate-x-1 smooth-transition" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                    </div>
+                </div>
+
+                <!-- Project Node 2 -->
+                <div class="group flex flex-col justify-between bg-darkCard/40 border border-white/5 rounded-3xl p-5 hover:border-white/10 hover:bg-darkCard/60 smooth-transition">
+                    <div>
+                        <div class="overflow-hidden rounded-2xl bg-darkCard aspect-[16/10] relative mb-6">
+                            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80" alt="Developer Automation Tools Workspace Terminal" class="w-full h-full object-cover opacity-50 mix-blend-luminosity group-hover:opacity-90 group-hover:scale-102 group-hover:mix-blend-normal smooth-transition duration-500">
+                            <div class="absolute bottom-4 left-4 flex gap-1.5">
+                                <span class="bg-darkBg/90 backdrop-blur-md font-mono text-[9px] px-2.5 py-1 rounded-md text-slate-300 border border-white/5">TypeScript</span>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between mb-2">
+                            <span class="font-mono text-[10px] text-accentPurple tracking-widest uppercase">Automation Tooling</span>
+                            <span class="w-1.5 h-1.5 rounded-full bg-accentPurple"></span>
+                        </div>
+                        <h3 class="text-xl font-bold text-white group-hover:text-accentPurple smooth-transition">Syntax Bundler</h3>
+                        <p class="text-sm text-slate-400 font-light mt-3 leading-relaxed">An open-source packager constructed to assemble decoupled dynamic utilities cleanly.</p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-white/5 flex items-center justify-between text-xs font-mono group-hover:text-white smooth-transition">
+                        <span class="text-slate-500">Explore Source Files</span>
+                        <svg class="w-4 h-4 transform group-hover:translate-x-1 smooth-transition" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                    </div>
+                </div>
+
+                <!-- Project Node 3 -->
+                <div class="group flex flex-col justify-between bg-darkCard/40 border border-white/5 rounded-3xl p-5 hover:border-white/10 hover:bg-darkCard/60 smooth-transition">
+                    <div>
+                        <div class="overflow-hidden rounded-2xl bg-darkCard aspect-[16/10] relative mb-6">
+                            <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=800&q=80" alt="Secure Interface Relational Datatables Blueprint" class="w-full h-full object-cover opacity-50 mix-blend-luminosity group-hover:opacity-90 group-hover:scale-102 group-hover:mix-blend-normal smooth-transition duration-500">
+                            <div class="absolute bottom-4 left-4 flex gap-1.5">
+                                <span class="bg-darkBg/90 backdrop-blur-md font-mono text-[9px] px-2.5 py-1 rounded-md text-slate-300 border border-white/5">GraphQL</span>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between mb-2">
+                            <span class="font-mono text-[10px] text-accentNeon tracking-widest uppercase">API Management Layer</span>
+                            <span class="w-1.5 h-1.5 rounded-full bg-accentEmerald"></span>
+                        </div>
+                        <h3 class="text-xl font-bold text-white group-hover:text-accentNeon smooth-transition">Vortex Gate</h3>
+                        <p class="text-sm text-slate-400 font-light mt-3 leading-relaxed">Bespoke gateway architecture deployed to track secure relational infrastructure tables.</p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-white/5 flex items-center justify-between text-xs font-mono group-hover:text-white smooth-transition">
+                        <span class="text-slate-500">View Infrastructure Integration</span>
+                        <svg class="w-4 h-4 transform group-hover:translate-x-1 smooth-transition" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. HIGH-CONVERTING WORKFLOW TIMELINE ROADMAP -->
+        <section id="process" class="py-24 bg-darkCard/20 px-6 lg:px-12 border-y border-white/5">
+            <div class="max-w-7xl mx-auto">
+                <div class="mb-20 text-center max-w-xl mx-auto">
+                    <span class="font-mono text-xs text-accentPurple block mb-2">// 03. ARCHITECTURAL PATHWAY</span>
+                    <h2 class="text-3xl md:text-4xl font-bold text-white tracking-tight">How We Build Systems</h2>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 relative">
+                    <!-- Step 1 -->
+                    <div class="bg-darkCard border border-white/5 p-8 rounded-3xl relative">
+                        <span class="text-4xl font-bold text-slate-700 block font-mono mb-4">01</span>
+                        <h3 class="text-lg font-semibold text-white mb-2">Technical Blueprinting</h3>
+                        <p class="text-sm text-slate-400 font-light leading-relaxed">Mapping layout hierarchies, optimizing technical data flow layers, and organizing target asset definitions.</p>
+                    </div>
+                    <!-- Step 2 -->
+                    <div class="bg-darkCard border border-white/5 p-8 rounded-3xl relative">
+                        <span class="text-4xl font-bold text-accentNeon block font-mono mb-4">02</span>
+                        <h3 class="text-lg font-semibold text-white mb-2">Pristine Engineering</h3>
+                        <p class="text-sm text-slate-400 font-light leading-relaxed">Writing high-performance component arrays paired with dynamic styling utility patterns without bloat.</p>
+                    </div>
+                    <!-- Step 3 -->
+                    <div class="bg-darkCard border border-white/5 p-8 rounded-3xl relative">
+                        <span class="text-4xl font-bold text-slate-700 block font-mono mb-4">03</span>
+                        <h3 class="text-lg font-semibold text-white mb-2">Metric Verification</h3>
+                        <p class="text-sm text-slate-400 font-light leading-relaxed">Running deep optimization checks across multiple viewports to verify sub-second response speeds.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 8. VALIDATED CLIENT PROOF / TESTIMONIAL QUOTES -->
+        <section id="testimonials" class="py-24 px-6 max-w-7xl mx-auto lg:px-12">
+            <div class="mb-16">
+                <span class="font-mono text-xs text-accentNeon block mb-2">// 04. SOCIAL PROOF ARCHIVE</span>
+                <h2 class="text-3xl md:text-4xl font-bold text-white tracking-tight">Client Trust Notations</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-darkCard border border-white/5 p-8 rounded-3xl flex flex-col justify-between">
+                    <p class="text-base lg:text-lg font-light text-slate-300 leading-relaxed mb-8">
+                        "Alex restructured our primary database integration workflows into a seamless custom API. The application framework's performance metrics increased immediately, accelerating target checkouts."
+                    </p>
+                    <div class="flex items-center space-x-4">
+                        <div class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center font-mono font-bold text-xs text-white">MV</div>
+                        <div>
+                            <h4 class="text-sm font-semibold text-white">Marcus Vance</h4>
+                            <p class="font-mono text-[11px] text-slate-500">CTO, Core Retail Corp</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-darkCard border border-white/5 p-8 rounded-3xl flex flex-col justify-between">
+                    <p class="text-base lg:text-lg font-light text-slate-300 leading-relaxed mb-8">
+                        "The utility-first structure delivered for our layout systems module was perfectly documented, modular, and instantly ready for scaling in production pipelines."
+                    </p>
+                    <div class="flex items-center space-x-4">
+                        <div class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center font-mono font-bold text-xs text-white">EL</div>
+                        <div>
+                            <h4 class="text-sm font-semibold text-white">Elena Rostova</h4>
+                            <p class="font-mono text-[11px] text-slate-500">Engineering Lead, Syntax Lab</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 9. TRANSPARENT INVESTMENT PACKAGE MATRIX -->
+        <section id="pricing" class="py-24 bg-darkCard/30 border-t border-white/5 px-6 lg:px-12">
+            <div class="max-w-7xl mx-auto">
+                <div class="text-center mb-16">
+                    <span class="font-mono text-xs text-accentPurple block mb-2">// 05. CORE INVESTMENT FRAMEWORKS</span>
+                    <h2 class="text-3xl md:text-4xl font-bold text-white tracking-tight">Engagement Scopes</h2>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 max-w-4xl mx-auto gap-8">
+                    <!-- Tier 1 -->
+                    <div class="bg-darkCard border border-white/5 p-8 rounded-3xl flex flex-col justify-between">
+                        <div>
+                            <span class="font-mono text-[10px] uppercase text-accentNeon tracking-wider">// SYSTEM DISCOVERY & MVP</span>
+                            <p class="text-4xl font-bold text-white mt-4">$4,500 <span class="text-xs text-slate-500 font-normal">/ flat tier</span></p>
+                            <ul class="mt-6 space-y-3.5 text-sm text-slate-400 font-light">
+                                <li class="flex items-center"><span class="text-accentNeon mr-2">✓</span> Complete Layout Design Framework</li>
+                                <li class="flex items-center"><span class="text-accentNeon mr-2">✓</span> 5 Core Semantic Viewport Components</li>
+                                <li class="flex items-center"><span class="text-accentNeon mr-2">✓</span> Comprehensive Structural Documentation</li>
+                            </ul>
+                        </div>
+                        <a href="#contact" class="mt-8 block w-full text-center py-3.5 rounded-xl bg-white/5 hover:bg-white/10 font-mono text-xs text-white border border-white/10 smooth-transition">Initiate Intake</a>
+                    </div>
+
+                    <!-- Tier 2 -->
+                    <div class="bg-darkCard border border-accentPurple/30 p-8 rounded-3xl flex flex-col justify-between relative overflow-hidden">
+                        <div class="absolute top-0 right-0 bg-accentPurple text-darkBg font-mono text-[9px] uppercase font-bold px-4 py-1 rounded-bl-xl tracking-widest">POPULAR</div>
+                        <div>
+                            <span class="font-mono text-[10px] uppercase text-accentPurple tracking-wider">// SCALED SYSTEM ARCHITECTURE</span>
+                            <p class="text-4xl font-bold text-white mt-4">$8,000 <span class="text-xs text-slate-500 font-normal">/ flat tier</span></p>
+                            <ul class="mt-6 space-y-3.5 text-sm text-slate-400 font-light">
+                                <li class="flex items-center"><span class="text-accentPurple mr-2">✓</span> Unlimited Structural Layout Components</li>
+                                <li class="flex items-center"><span class="text-accentPurple mr-2">✓</span> Full Database & Relational API Rigging</li>
+                                <li class="flex items-center"><span class="text-accentPurple mr-2">✓</span> 30 Days Post-Deployment Optimization Support</li>
+                            </ul>
+                        </div>
+                        <a href="#contact" class="mt-8 block w-full text-center py-3.5 rounded-xl bg-accentPurple text-darkBg font-mono text-xs font-bold hover:bg-white smooth-transition">Initiate Intake</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 10. NEW: HIGH-INTENT FAQ / OBJECTION HANDLERS -->
+        <section id="faq" class="py-24 px-6 max-w-4xl mx-auto lg:px-12">
+            <div class="mb-16 text-center">
+                <span class="font-mono text-xs text-accentNeon block mb-2">// OBJECTION DESTRUCTION</span>
+                <h2 class="text-3xl font-bold text-white tracking-tight">Frequently Answered Parameters</h2>
+            </div>
+            
+            <div class="space-y-4">
+                <div class="bg-darkCard border border-white/5 p-6 rounded-2xl">
+                    <h4 class="text-base font-semibold text-white mb-2">Do I retain total ownership over the final source code?</h4>
+                    <p class="text-sm text-slate-400 font-light leading-relaxed">Absolutely. Upon final milestone settlement, 100% of the repository intellectual property rights, assets, and clean deployment files are securely transferred straight to your engineering team.</p>
+                </div>
+                <div class="bg-darkCard border border-white/5 p-6 rounded-2xl">
+                    <h4 class="text-base font-semibold text-white mb-2">What happens if a layout element breaks post-deployment?</h4>
+                    <p class="text-sm text-slate-400 font-light leading-relaxed">Every engagement module includes an integrated 30-day warranty cycle tracking critical bugs or viewport display vulnerabilities absolutely free of charge.</p>
+                </div>
+                <div class="bg-darkCard border border-white/5 p-6 rounded-2xl">
+                    <h4 class="text-base font-semibold text-white mb-2">How do you handle scope modifications mid-project?</h4>
+                    <p class="text-sm text-slate-400 font-light leading-relaxed">Minor calibration runs are managed seamlessly within our workflow. Significant programmatic pivots are structured cleanly via straightforward add-on tickets so timelines stay secure.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 11. CONVERTING INLINE CAPTURE FOOTER FORM -->
+        <section id="contact" class="py-24 px-6 max-w-7xl mx-auto lg:px-12">
+            <div class="bg-darkCard border border-white/5 rounded-3xl p-8 lg:p-16 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center relative overflow-hidden">
+                <div class="lg:col-span-5 z-10">
+                    <span class="font-mono text-xs text-accentNeon block mb-2">// 06. CONNECTIVITY GATEWAY</span>
+                    <h2 class="text-3xl md:text-5xl font-bold text-white tracking-tight leading-none mb-6">Let's build together.</h2>
+                    <p class="text-slate-400 font-light leading-relaxed mb-8">
+                        Seeking complex layout engineering, database rewrites, or dedicated consulting pipelines? Drop a line detailing your project's technical specifications.
+                    </p>
+                    
+                    <!-- NEW: TRUST-BUILDING RISK REVERSAL COMPONENT -->
+                    <div class="bg-gradient-to-r from-accentNeon/10 to-accentPurple/10 border border-white/10 rounded-2xl p-5 mb-6 flex items-start space-x-4">
+                        <div class="text-accentNeon text-xl mt-0.5">🛡️</div>
+                        <div>
+                            <h4 class="text-xs font-semibold text-white font-mono uppercase tracking-wider">The Sovereign Technical Guarantee</h4>
+                            <p class="text-[11px] text-slate-400 font-light mt-1 leading-relaxed">
+                                If your target layout architecture doesn't achieve completely green structural scores on baseline performance diagnostics, I will refactor your core components entirely on my own time. No excuses.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="font-mono text-sm space-y-2">
+                        <p class="text-slate-500">Secure Link: <a href="mailto:alex@thorne.io" class="text-white hover:text-accentNeon smooth-transition">alex@thorne.io</a></p>
+                    </div>
+                </div>
+
+                <!-- Form Endpoint -->
+                <form action="#" method="POST" class="lg:col-span-7 space-y-4 z-10 w-full" onsubmit="event.preventDefault();">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block font-mono text-[10px] uppercase text-slate-400 mb-2 tracking-wider">Your Name</label>
+                            <input type="text" placeholder="John Doe" class="w-full bg-darkBg border border-white/10 rounded-xl px-4 py-3.5 text-sm text-white focus:outline-none focus:border-accentNeon smooth-transition">
+                        </div>
+                        <div>
+                            <label class="block font-mono text-[10px] uppercase text-slate-400 mb-2 tracking-wider">Email Endpoint</label>
+                            <input type="email" placeholder="john@domain.com" class="w-full bg-darkBg border border-white/10 rounded-xl px-4 py-3.5 text-sm text-white focus:outline-none focus:border-accentNeon smooth-transition">
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block font-mono text-[10px] uppercase text-slate-400 mb-2 tracking-wider">Project Specification Parameters</label>
+                        <textarea rows="4" placeholder="Describe layout properties or delivery dates..." class="w-full bg-darkBg border border-white/10 rounded-xl px-4 py-3.5 text-sm text-white focus:outline-none focus:border-accentNeon smooth-transition resize-none"></textarea>
+                    </div>
+                    <button type="submit" class="w-full inline-flex items-center justify-center px-6 py-4 text-xs font-mono tracking-widest uppercase text-darkBg bg-accentNeon font-bold rounded-xl hover:bg-white smooth-transition">
+                        Dispatch Transmission →
+                    </button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- 12. MINIMAL PREMIUM FOOTER NOTATION -->
+    <footer class="border-t border-white/5 py-12 px-6 lg:px-12 text-xs font-mono text-slate-500">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
+            <p>&copy; 2026 Alex Thorne Systems. Engineered to ThemeForest quality standards.</p>
+            <div class="flex space-x-6">
+                <a href="#" class="hover:text-white smooth-transition">GitHub</a>
+                <a href="#" class="hover:text-white smooth-transition">LinkedIn</a>
+                <a href="#hero" class="text-accentNeon hover:underline smooth-transition">Back to top ↑</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 13. NEW: INTERACTIVE FLOATING AVAILABILITY WIDGET -->
+    <div class="fixed bottom-6 right-6 z-50 bg-darkCard/90 backdrop-blur-md border border-white/10 rounded-2xl p-4 shadow-2xl flex items-center space-x-4 max-w-sm hidden md:flex">
+        <div class="relative">
+            <div class="w-3 h-3 bg-accentEmerald rounded-full animate-ping absolute -top-0.5 -right-0.5"></div>
+            <div class="w-10 h-10 rounded-xl bg-slate-800 flex items-center justify-center font-mono text-sm text-white font-bold">AT</div>
+        </div>
+        <div>
+            <p class="text-xs font-semibold text-white">Hosting discovery calls this week</p>
+            <a href="#contact" class="text-[10px] font-mono text-accentNeon uppercase tracking-wider hover:underline mt-0.5 block">Secure an open slot →</a>
+        </div>
+    </div>
+
+</body>
+</html>

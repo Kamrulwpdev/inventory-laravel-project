@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>System Updates & Insights — Management Hub</title>
+    <!-- Tailwind CSS CDN Engine -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                        mono: ['JetBrains Mono', 'monospace'],
+                    },
+                    colors: {
+                        darkBg: '#090a0f',
+                        darkCard: '#12141c',
+                        accentNeon: '#38bdf8', /* Electric Sky Blue */
+                        accentPurple: '#818cf8',
+                        accentEmerald: '#10b981'
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>.smooth-transition { transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1); }</style>
+</head>
+<body class="font-sans text-slate-300 bg-darkBg antialiased overflow-x-hidden selection:bg-accentNeon selection:text-darkBg">
+
+    <!-- FIXED GLASSMORPHIC NAVIGATION -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-darkBg/70 backdrop-blur-xl border-b border-white/5 smooth-transition">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12 h-20 flex items-center justify-between">
+            <a href="#" class="font-mono text-sm tracking-widest text-white font-bold group">
+                THORNE<span class="text-accentNeon font-sans font-medium text-xs tracking-normal normal-case block sm:inline sm:ml-2">// MANAGEMENT</span>
+            </a>
+            <nav class="hidden xl:flex items-center space-x-8 text-[11px] font-mono tracking-widest uppercase text-slate-400">
+                <a href="index.html" class="hover:text-white smooth-transition">// System Dashboard</a>
+                <a href="blog.html" class="text-white smooth-transition">// Platform Updates</a>
+            </nav>
+            <div class="hidden md:block">
+                <a href="#newsletter" class="inline-flex items-center justify-center px-5 py-2.5 text-xs font-mono tracking-wider uppercase text-accentNeon border border-accentNeon/30 rounded-lg hover:bg-accentNeon/10 smooth-transition">
+                    Subscribe to Release Logs
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN GRID CONTAINER -->
+    <main class="pt-32 pb-24 px-6 max-w-7xl mx-auto lg:px-12">
+        
+        <!-- HEADER BLOCK -->
+        <div class="mb-16 border-b border-white/5 pb-12">
+            <span class="font-mono text-xs text-accentNeon block mb-2">// INSIGHTS & LOGISTICS</span>
+            <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight text-white">System Logs & Retail Operations Blog</h1>
+            <p class="text-slate-400 font-light mt-4 max-w-xl">Strategies, optimization guides, and official framework release logs for modern retail enterprises.</p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+            
+            <!-- LEFT COLUMN: BLOG POSTS LOOP (8 Cols) -->
+            <div class="lg:col-span-8 space-y-12">
+                
+                <!-- Post Item 1 -->
+                <article class="group grid grid-cols-1 md:grid-cols-12 gap-6 bg-darkCard/40 border border-white/5 p-5 rounded-3xl hover:border-white/10 hover:bg-darkCard/60 smooth-transition">
+                    <div class="md:col-span-5 overflow-hidden rounded-2xl bg-darkBg aspect-[16/10] md:aspect-square relative">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=600&q=80" alt="Inventory Analytics Matrix Layout" class="w-full h-full object-cover opacity-50 mix-blend-luminosity group-hover:opacity-90 group-hover:scale-102 group-hover:mix-blend-normal smooth-transition duration-500">
+                    </div>
+                    <div class="md:col-span-7 flex flex-col justify-between py-2">
+                        <div>
+                            <div class="flex items-center space-x-3 mb-3 font-mono text-[10px] tracking-wider uppercase">
+                                <span class="text-accentNeon bg-accentNeon/5 border border-accentNeon/10 px-2.5 py-0.5 rounded-md">Optimization</span>
+                                <span class="text-slate-500">May 14, 2026</span>
+                            </div>
+                            <h2 class="text-xl font-bold text-white group-hover:text-accentNeon smooth-transition">
+                                <a href="blog-single.html">Maximizing Checkout Yield via POS Interface Restructuring</a>
+                            </h2>
+                            <p class="text-sm text-slate-400 font-light mt-3 leading-relaxed line-clamp-2">
+                                Learn how shifting interface positioning parameters on touch terminals decreased order execution times by 18.4% during peak operational rush hours.
+                            </p>
+                        </div>
+                        <div class="mt-6 flex items-center justify-between text-xs font-mono group-hover:text-white smooth-transition pt-4 border-t border-white/5">
+                            <span class="text-slate-500">Read Analysis Blueprint</span>
+                            <svg class="w-4 h-4 transform group-hover:translate-x-1 smooth-transition" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Post Item 2 -->
+                <article class="group grid grid-cols-1 md:grid-cols-12 gap-6 bg-darkCard/40 border border-white/5 p-5 rounded-3xl hover:border-white/10 hover:bg-darkCard/60 smooth-transition">
+                    <div class="md:col-span-5 overflow-hidden rounded-2xl bg-darkBg aspect-[16/10] md:aspect-square relative">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=600&q=80" alt="Hardware Terminal Framework" class="w-full h-full object-cover opacity-50 mix-blend-luminosity group-hover:opacity-90 group-hover:scale-102 group-hover:mix-blend-normal smooth-transition duration-500">
+                    </div>
+                    <div class="md:col-span-7 flex flex-col justify-between py-2">
+                        <div>
+                            <div class="flex items-center space-x-3 mb-3 font-mono text-[10px] tracking-wider uppercase">
+                                <span class="text-accentPurple bg-accentPurple/5 border border-accentPurple/10 px-2.5 py-0.5 rounded-md">Patch Notes</span>
+                                <span class="text-slate-500">April 29, 2026</span>
+                            </div>
+                            <h2 class="text-xl font-bold text-white group-hover:text-accentPurple smooth-transition">
+                                <a href="blog-single.html">Release v2.4.0: Hardware Driver Optimization for QR Scanners</a>
+                            </h2>
+                            <p class="text-sm text-slate-400 font-light mt-3 leading-relaxed line-clamp-2">
+                                An in-depth dive into the low-latency barcode scanning updates deployed across our latest web terminal framework array.
+                            </p>
+                        </div>
+                        <div class="mt-6 flex items-center justify-between text-xs font-mono group-hover:text-white smooth-transition pt-4 border-t border-white/5">
+                            <span class="text-slate-500">Read Analysis Blueprint</span>
+                            <svg class="w-4 h-4 transform group-hover:translate-x-1 smooth-transition" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- PAGINATION CORE -->
+                <nav class="flex items-center space-x-2 font-mono text-xs pt-8 border-t border-white/5">
+                    <a href="#" class="w-10 h-10 rounded-xl bg-white/10 text-white flex items-center justify-center border border-white/10">1</a>
+                    <a href="#" class="w-10 h-10 rounded-xl bg-darkCard/40 text-slate-400 flex items-center justify-center border border-white/5 hover:border-white/10 hover:text-white smooth-transition">2</a>
+                    <a href="#" class="w-10 h-10 rounded-xl bg-darkCard/40 text-slate-400 flex items-center justify-center border border-white/5 hover:border-white/10 hover:text-white smooth-transition">→</a>
+                </nav>
+            </div>
+
+            <!-- RIGHT COLUMN: SIDEBAR METADATA (4 Cols) -->
+            <aside class="lg:col-span-4 space-y-8">
+                
+                <!-- Search Module -->
+                <div class="bg-darkCard border border-white/5 p-6 rounded-3xl">
+                    <h3 class="font-mono text-xs text-white uppercase tracking-wider mb-4">// System Search</h3>
+                    <div class="relative">
+                        <input type="text" placeholder="Search archive logs..." class="w-full bg-darkBg border border-white/5 rounded-xl px-4 h-12 text-sm text-white focus:outline-none focus:border-accentNeon smooth-transition">
+                    </div>
+                </div>
+
+                <!-- Structured Categories -->
+                <div class="bg-darkCard border border-white/5 p-6 rounded-3xl">
+                    <h3 class="font-mono text-xs text-white uppercase tracking-wider mb-4">// Categorization</h3>
+                    <ul class="space-y-3 font-mono text-xs">
+                        <li>
+                            <a href="#" class="flex justify-between text-slate-400 hover:text-accentNeon smooth-transition">
+                                <span>/ Logistics Optimization</span><span class="text-slate-600">(12)</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="flex justify-between text-slate-400 hover:text-accentPurple smooth-transition">
+                                <span>/ Core Patch Documentation</span><span class="text-slate-600">(8)</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="flex justify-between text-slate-400 hover:text-accentNeon smooth-transition">
+                                <span>/ Retail Analytics Matrix</span><span class="text-slate-600">(5)</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <!-- INLINE NEWSLETTER FOOTER CATCH -->
+    <section id="newsletter" class="py-16 bg-darkCard/30 border-t border-white/5 px-6 lg:px-12">
+        <div class="max-w-4xl mx-auto text-center">
+            <h3 class="text-2xl font-bold text-white tracking-tight mb-2">Get direct terminal deployment data.</h3>
+            <p class="text-sm text-slate-400 font-light max-w-md mx-auto mb-6">Stay informed on system patches, distribution layout upgrades, and dashboard optimization parameters.</p>
+            <form class="flex flex-col sm:flex-row gap-3 max-w-md mx-auto" onsubmit="event.preventDefault();">
+                <input type="email" placeholder="security@company.com" required class="flex-1 bg-darkBg border border-white/5 rounded-xl px-4 h-12 text-sm text-white focus:outline-none focus:border-accentNeon smooth-transition">
+                <button type="submit" class="bg-accentNeon text-darkBg px-6 h-12 rounded-xl font-mono text-xs font-bold uppercase tracking-wider hover:bg-white smooth-transition">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="bg-darkBg border-t border-white/5 py-8 text-center text-slate-600 font-mono text-[11px]">
+        <p>&copy; 2026 Management Systems Inc. All rights reserved.</p>
+    </footer>
+</body>
+</html>

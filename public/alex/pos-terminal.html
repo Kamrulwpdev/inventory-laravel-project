@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Cashier Terminal Vector — Point of Sale</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Plus Jakarta Sans', 'sans-serif'], mono: ['JetBrains Mono', 'monospace'] },
+                    colors: { darkBg: '#090a0f', darkCard: '#12141c', accentNeon: '#38bdf8', accentPurple: '#818cf8', accentEmerald: '#10b981' }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>.smooth-transition { transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1); }</style>
+</head>
+<body class="font-sans text-slate-300 bg-darkBg antialiased selection:bg-accentNeon selection:text-darkBg h-screen flex flex-col overflow-hidden">
+
+    <!-- TOP CONTROL CONSOLE -->
+    <header class="h-16 bg-darkCard border-b border-white/5 px-6 flex items-center justify-between flex-shrink-0">
+        <div class="flex items-center space-x-6">
+            <a href="index.html" class="font-mono text-xs tracking-widest text-white font-bold">// APP HUB</a>
+            <span class="w-px h-4 bg-white/10"></span>
+            <div class="flex items-center space-x-2 font-mono text-[11px] text-accentEmerald">
+                <span class="w-2 h-2 rounded-full bg-accentEmerald animate-pulse"></span>
+                <span>TERMINAL ACTIVE // NODE-04</span>
+            </div>
+        </div>
+        <div class="flex items-center space-x-4">
+            <span class="font-mono text-xs text-slate-500">Operator: <span class="text-white">Alex Thorne</span></span>
+        </div>
+    </header>
+
+    <!-- CORE INTERFACE ROW split -->
+    <div class="flex-1 flex overflow-hidden">
+        
+        <!-- MAIN PRODUCT SCANNER AREA (Left 8 Cols equivalents) -->
+        <main class="flex-1 p-6 overflow-y-auto space-y-6">
+            <!-- FILTER TOOLBAR -->
+            <div class="flex flex-col sm:flex-row gap-4 justify-between items-center bg-darkCard/40 border border-white/5 p-4 rounded-2xl">
+                <input type="text" placeholder="⚡ Scan product SKU or enter search parameters..." class="w-full sm:max-w-md bg-darkBg border border-white/5 rounded-xl px-4 h-11 text-xs text-white focus:outline-none focus:border-accentNeon smooth-transition">
+                <div class="flex gap-2 font-mono text-[10px] overflow-x-auto w-full sm:w-auto">
+                    <span class="px-3 py-1.5 rounded-lg bg-white/10 text-white border border-white/10 cursor-pointer">All Tech</span>
+                    <span class="px-3 py-1.5 rounded-lg bg-darkCard border border-white/5 text-slate-400 hover:text-white smooth-transition cursor-pointer">Audio</span>
+                    <span class="px-3 py-1.5 rounded-lg bg-darkCard border border-white/5 text-slate-400 hover:text-white smooth-transition cursor-pointer">Power</span>
+                </div>
+            </div>
+
+            <!-- PRODUCT GRID ARCHITECTURE -->
+            <div class="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4">
+                <!-- Card Component 1 -->
+                <div class="bg-darkCard border border-white/5 p-4 rounded-2xl hover:border-accentNeon/30 cursor-pointer smooth-transition group">
+                    <div class="aspect-square bg-darkBg rounded-xl overflow-hidden mb-3 relative">
+                        <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=300&q=80" class="w-full h-full object-cover opacity-40 group-hover:opacity-70 smooth-transition">
+                        <span class="absolute top-2 right-2 font-mono text-[9px] bg-darkBg/80 px-2 py-0.5 rounded text-accentEmerald">QTY: 14</span>
+                    </div>
+                    <h3 class="text-xs font-semibold text-white tracking-tight truncate">Omni mechanical Core Keyboard</h3>
+                    <div class="flex justify-between items-center mt-2 pt-2 border-t border-white/5">
+                        <span class="font-mono text-xs text-accentNeon font-bold">$189.00</span>
+                        <span class="font-mono text-[9px] text-slate-500">SKU-4920</span>
+                    </div>
+                </div>
+                <!-- Card Component 2 -->
+                <div class="bg-darkCard border border-white/5 p-4 rounded-2xl hover:border-accentNeon/30 cursor-pointer smooth-transition group">
+                    <div class="aspect-square bg-darkBg rounded-xl overflow-hidden mb-3 relative">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=300&q=80" class="w-full h-full object-cover opacity-40 group-hover:opacity-70 smooth-transition">
+                        <span class="absolute top-2 right-2 font-mono text-[9px] bg-darkBg/80 px-2 py-0.5 rounded text-red-400">QTY: 2</span>
+                    </div>
+                    <h3 class="text-xs font-semibold text-white tracking-tight truncate">Studio monitor ANC Node</h3>
+                    <div class="flex justify-between items-center mt-2 pt-2 border-t border-white/5">
+                        <span class="font-mono text-xs text-accentNeon font-bold">$299.00</span>
+                        <span class="font-mono text-[9px] text-slate-500">SKU-1049</span>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- CART DRAWER CALCULATION MATRIX (Right Side Dock) -->
+        <aside class="w-96 bg-darkCard border-l border-white/5 flex flex-col justify-between flex-shrink-0 overflow-hidden">
+            <!-- CART HEADER -->
+            <div class="p-4 border-b border-white/5 flex justify-between items-center">
+                <span class="font-mono text-xs text-white font-bold">// LIVE SESSION MATRIX</span>
+                <span class="font-mono text-[10px] bg-white/5 border border-white/10 px-2 py-0.5 rounded text-slate-400">2 Items</span>
+            </div>
+
+            <!-- SCROLLABLE REGISTER DRAWER LIST -->
+            <div class="flex-1 overflow-y-auto p-4 space-y-3">
+                <div class="bg-darkBg/50 border border-white/5 p-3 rounded-xl flex justify-between items-center">
+                    <div class="overflow-hidden truncate max-w-[200px]">
+                        <h4 class="text-xs font-medium text-white truncate">Omni mechanical Core Keyboard</h4>
+                        <p class="font-mono text-[10px] text-slate-500 mt-0.5">1 × $189.00</p>
+                    </div>
+                    <span class="font-mono text-xs text-white font-bold">$189.00</span>
+                </div>
+                <div class="bg-darkBg/50 border border-white/5 p-3 rounded-xl flex justify-between items-center">
+                    <div class="overflow-hidden truncate max-w-[200px]">
+                        <h4 class="text-xs font-medium text-white truncate">Studio monitor ANC Node</h4>
+                        <p class="font-mono text-[10px] text-slate-500 mt-0.5">1 × $299.00</p>
+                    </div>
+                    <span class="font-mono text-xs text-white font-bold">$299.00</span>
+                </div>
+            </div>
+
+            <!-- VALUE LEDGER BOX -->
+            <div class="p-4 border-t border-white/5 bg-darkBg/20 space-y-3">
+                <div class="space-y-1.5 font-mono text-xs text-slate-400">
+                    <div class="flex justify-between"><span>Subtotal Matrix:</span> <span class="text-white">$488.00</span></div>
+                    <div class="flex justify-between"><span>VAT Accumulation (12%):</span> <span class="text-white">$58.56</span></div>
+                </div>
+                <div class="pt-3 border-t border-white/5 flex justify-between items-baseline">
+                    <span class="font-mono text-xs text-slate-400 uppercase tracking-wider">Session Total:</span>
+                    <span class="text-2xl font-black text-accentNeon font-mono">$546.56</span>
+                </div>
+
+                <!-- TRANSACTION DISPATCH CTA -->
+                <button class="w-full bg-accentNeon text-darkBg font-mono text-xs font-bold tracking-widest uppercase h-12 rounded-xl hover:bg-white smooth-transition mt-2">
+                    Execute Ledger Settlement
+                </button>
+            </div>
+        </aside>
+    </div>
+
+</body>
+</html>

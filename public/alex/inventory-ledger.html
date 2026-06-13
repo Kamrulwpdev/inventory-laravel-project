@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enterprise Inventory Registry Matrix</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Plus Jakarta Sans', 'sans-serif'], mono: ['JetBrains Mono', 'monospace'] },
+                    colors: { darkBg: '#090a0f', darkCard: '#12141c', accentNeon: '#38bdf8', accentPurple: '#818cf8', accentEmerald: '#10b981' }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>.smooth-transition { transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1); }</style>
+</head>
+<body class="font-sans text-slate-300 bg-darkBg antialiased selection:bg-accentNeon selection:text-darkBg pt-24 pb-16 px-6 max-w-7xl mx-auto lg:px-12">
+
+    <!-- HEADER DATA HORIZON -->
+    <div class="flex flex-col md:flex-row justify-between items-start md:items-end border-b border-white/5 pb-8 mb-8 gap-4">
+        <div>
+            <span class="font-mono text-xs text-accentPurple block mb-1">// CORE ASSET LEDGER</span>
+            <h1 class="text-3xl font-extrabold text-white tracking-tight">Stock Inventory Array</h1>
+        </div>
+        <button class="bg-accentPurple text-darkBg font-mono text-xs font-bold tracking-wider uppercase px-5 h-11 rounded-xl hover:bg-white smooth-transition">
+            + Provision Item Entry
+        </button>
+    </div>
+
+    <!-- FILTER TOOLBAR ROW -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+        <input type="text" placeholder="Search catalog index parameters..." class="bg-darkCard/50 border border-white/5 rounded-xl px-4 h-11 text-xs text-white focus:outline-none focus:border-accentPurple smooth-transition">
+        <select class="bg-darkCard/50 border border-white/5 rounded-xl px-4 h-11 text-xs text-slate-400 focus:outline-none focus:border-accentPurple smooth-transition">
+            <option>All Structural Target Categories</option>
+            <option>Hardware Elements</option>
+        </select>
+        <div class="bg-darkCard/40 border border-white/5 rounded-xl px-4 flex items-center justify-between text-xs font-mono">
+            <span class="text-slate-500">System Count:</span>
+            <span class="text-white font-bold">1,402 Active SKUs</span>
+        </div>
+    </div>
+
+    <!-- MAIN DATA LEDGER FRAMEWORK -->
+    <div class="bg-darkCard border border-white/5 rounded-2xl overflow-hidden">
+        <div class="overflow-x-auto">
+            <table class="w-full text-left font-mono text-xs border-collapse">
+                <thead>
+                    <tr class="border-b border-white/10 bg-white/5 text-slate-400">
+                        <th class="p-4 uppercase tracking-wider">// Product Identity</th>
+                        <th class="p-4 uppercase tracking-wider">// Code Matrix</th>
+                        <th class="p-4 uppercase tracking-wider">// Allocation Volume</th>
+                        <th class="p-4 uppercase tracking-wider">// Value Scaling</th>
+                        <th class="p-4 uppercase tracking-wider">// Health Status</th>
+                    </tr>
+                </thead>
+                <tbody class="divide-y divide-white/5 text-slate-300">
+                    <!-- Row 1 -->
+                    <tr class="hover:bg-white/[0.02] smooth-transition">
+                        <td class="p-4 font-sans font-medium text-white">Omni mechanical Core Keyboard</td>
+                        <td class="p-4 text-slate-400">SKU-4920-XL</td>
+                        <td class="p-4 font-bold text-white">14 Units</td>
+                        <td class="p-4 text-accentNeon">$189.00</td>
+                        <td class="p-4"><span class="inline-flex items-center px-2 py-0.5 rounded bg-accentEmerald/10 text-accentEmerald border border-accentEmerald/20 text-[10px]">NOMINAL STABLE</span></td>
+                    </tr>
+                    <!-- Row 2 -->
+                    <tr class="hover:bg-white/[0.02] smooth-transition">
+                        <td class="p-4 font-sans font-medium text-white">Studio monitor ANC Node</td>
+                        <td class="p-4 text-slate-400">SKU-1049-MD</td>
+                        <td class="p-4 font-bold text-white">2 Units</td>
+                        <td class="p-4 text-accentNeon">$299.00</td>
+                        <td class="p-4"><span class="inline-flex items-center px-2 py-0.5 rounded bg-red-400/10 text-red-400 border border-red-400/20 text-[10px]">CRITICAL DEPLOY</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</body>
+</html>
