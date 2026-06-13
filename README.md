@@ -1,7 +1,6 @@
-# Inventory E-Commerce & Management System (Laravel + Livewire)
+# 🛒 Quickspace POS — Inventory & E-Commerce Management System (Laravel + Livewire)
 
-A modern, full-stack inventory and e-commerce management application built with **Laravel**, **Livewire**, and **Alpine.js**. This system is designed to handle product catalogs, stock purchasing, real-time sales tracking, and reporting.
-
+A modern, full-stack inventory and point-of-sale (POS) e-commerce application built with **Laravel**, **Livewire**, and **Alpine.js**. This system is engineered to handle seamless checkout flows, real-time sales metrics, stock purchasing tracking, and automated reporting.
 ---
 
 ## 👨‍💻 Developed By
@@ -21,14 +20,27 @@ You can test the application live in your browser using the following credential
 
 ---
 
+## 📸 Application Screenshots
+
+### Main Dashboard Overview
+Provides real-time analytics on daily sales, total customers, stock alerts, and deep data visualizations for weekly and monthly progress.
+![Main Dashboard](screenshots/invetntory.png)
+
+### Terminal Manager (POS Screen)
+An intuitive interface for processing orders, managing customer selections, updating quantities, applying manual discounts, and handling checkouts on the fly.
+![POS Screen](screenshots/Quickspace%20POS%20.png)
+
+---
+
 ## 🚀 Features
 
-* **Product Management:** Seamless product entry, listing, and catalog management.
-* **Stock & Purchase Tracking:** Keep an eye on stock levels and purchase histories.
-* **Sales & Reporting:** * Real-time sales charts and history.
-  * Comprehensive sales reports.
+* **Point of Sale (POS) Terminal:** Fast, interactive terminal interface for managing baskets and quick checkout pipelines.
+* **Product Management:** Seamless product entry, categorizations, and catalog management.
+* **Stock & Purchase Tracking:** Keep an eye on stock levels, incoming stock entry, and purchase histories.
+* **Sales & Reporting:** * Real-time graphical sales charts and statistics.
+  * Comprehensive historical transactional sales reports.
 * **PDF Generation:** Built-in PDF exporting for order recipes, payment receipts, and sale receipts.
-* **Shop & User Management:** Dedicated shop front-end features and administrative user management.
+* **Shop & User Management:** Dedicated shop front-end features and administrative user tier permissions.
 
 ---
 
