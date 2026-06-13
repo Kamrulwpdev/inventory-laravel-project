@@ -4,6 +4,16 @@ A modern, full-stack inventory and e-commerce management application built with 
 
 ---
 
+## 🌐 Live Demo
+
+You can test the application live in your browser using the following credentials:
+
+* **Demo Link:** [https://quickspace.shopilax.com/login](https://quickspace.shopilax.com/login)
+* **Admin Username:** `admin@pos.com`
+* **Admin Password:** `12121212`
+
+---
+
 ## 🚀 Features
 
 * **Product Management:** Seamless product entry, listing, and catalog management.
@@ -20,22 +30,22 @@ A modern, full-stack inventory and e-commerce management application built with 
 * **Backend:** PHP 8.x, Laravel 10.x/11.x
 * **Frontend:** Livewire, Blade, Tailwind CSS / Vite
 * **Database:** MySQL / MariaDB
-* **PDF Generation:** DOMPDF (or standard Laravel PDF package)
 
 ---
 
-## ⚙️ Getting Started / Installation
+## ⚙️ Installation Guide (How to Run Locally)
 
-Follow these steps to get a local copy running on your machine:
+Follow these steps to set up and run a copy of this project on your local machine:
 
 ### Prerequisites
-Make sure you have the following installed:
-* PHP (8.2 or higher recommended)
-* Composer
-* Node.js & NPM
-* Git
+Ensure you have the following installed on your computer:
+* **PHP** (8.2 or higher recommended)
+* **Composer** (PHP Package Manager)
+* **Node.js & NPM** (For frontend assets)
+* **MySQL** or any database server (like XAMPP/Laragon)
 
 ### 1. Clone the Repository
+Open your terminal/command prompt and run:
 ```bash
 git clone [https://github.com/Kamrulwpdev/inventory-laravel-project.git](https://github.com/Kamrulwpdev/inventory-laravel-project.git)
 cd inventory-laravel-project
